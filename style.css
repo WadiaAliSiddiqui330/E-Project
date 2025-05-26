@@ -1,13 +1,4 @@
-     :root {
-            --primary-color: #ff6b9d;
-            --secondary-color: #4ecdc4;
-            --accent-color: #ffe066;
-            --text-dark: #2c3e50;
-            --text-light: #7f8c8d;
-            --bg-light: #f8f9fa;
-        }
-
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -16,12 +7,16 @@
         body {
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            color: var(--text-dark);
+            background-color: #FFE8CD !important;
+    
         }
 
         /* Header Styles */
-        .text-primary {
-            color: var(--primary-color) !important;
+        .text-center>h1{
+            color: black !important;
+        }
+        .fa-gem{
+            color: #de1c5d;
         }
 
         /* Section Styles */
@@ -37,18 +32,18 @@
         .section-title h2 {
             font-size: 2.5rem;
             font-weight: 700;
-            color: var(--text-dark);
+            color: black;
             margin-bottom: 1rem;
         }
 
         .section-title p {
             font-size: 1.1rem;
-            color: var(--text-light);
+            color: #5f6d6e;
         }
 
         /* Card Styles */
         .care-card {
-            background:#F9EFED;;
+            background:#EECCC7;
             border-radius: 15px;
             padding: 2rem;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -64,27 +59,27 @@
 
         .care-card .icon {
             font-size: 3rem;
-            color: var(--primary-color);
+            color: #de1c5d;
             margin-bottom: 1rem;
         }
 
         .care-card h4 {
             font-weight: 600;
             margin-bottom: 1rem;
-            color: var(--text-dark);
+            color: #2c3e50;
         }
 
         /* Tips Section */
         .tips-section {
-            background: var(--bg-light);
+               background-color:#FFE8CD !important;
         }
 
         .tip-item {
-            background: white;
+            background:#EECCC7;
             padding: 1.5rem;
             border-radius: 10px;
             margin-bottom: 1rem;
-            border-left: 4px solid var(--secondary-color);
+            border-left: 4px solid #de1c5d;
             transition: all 0.3s ease;
         }
 
@@ -94,7 +89,7 @@
         }
 
         .tip-item .tip-number {
-            background: var(--secondary-color);
+            background: #de1c5d;
             color: white;
             width: 30px;
             height: 30px;
@@ -109,7 +104,7 @@
 
         /* Problems Section */
         .problem-card {
-            background: white;
+            background: #EECCC7;
             border-radius: 10px;
             padding: 1.5rem;
             margin-bottom: 1rem;
@@ -127,7 +122,7 @@
             justify-content: between;
             align-items: center;
             font-weight: 600;
-            color: var(--text-dark);
+            color: #2c3e50;
             margin-bottom: 0.5rem;
         }
 
@@ -136,25 +131,17 @@
             margin-top: 1rem;
             padding-top: 1rem;
             border-top: 1px solid #eee;
-            color: var(--text-light);
+            color: #7f8c8d;
         }
 
         .solution.show {
             display: block;
             animation: fadeIn 0.3s ease;
         }
-
-        /* Footer */
-        .footer {
-            background: var(--text-dark);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
+        .fa-exclamation-circle{
+            color: #de1c5d;
         }
 
-        .footer p {
-            margin: 0;
-        }
 
         /* Animations */
         @keyframes fadeInUp {
@@ -197,7 +184,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background: var(--primary-color);
+            background: #ff6b9d;
             color: white;
             width: 50px;
             height: 50px;
@@ -209,84 +196,67 @@
             transition: all 0.3s ease;
             z-index: 1000;
         }
+
         .scroll-top:hover {
-            background: var(--secondary-color);
+            background: #de1c5d;
             transform: translateY(-3px);
         }
 
         .scroll-top.show {
             display: flex;
         }
-        /* faq styling */
-/* faqs */
-.accordion{
-    max-width: 800px;
-    margin-left: 280px;
-}
-
-.accordion .contentBx{
-    position: relative;
-    margin: 10px 20px;
-}
-
-.accordion .contentBx .label {
-    position: relative;
-    padding: 10px;
-    background: #7A1527;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-}
-
-.accordion .contentBx .label::before {
-    content: '+';
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-}
-
-.accordion .contentBx.active .label::before {
-    content: '-';
-}
-
-.accordion .contentBx .content {
-    position: relative;
-    background: white;
-    height: 0;
-    overflow: hidden;
-    transition: 0.6s;
-    overflow: auto;
-}
-
-.accordion .contentBx.active .content {
-    height: 160px;
-    padding: 10px;
-}
-
-@media (min-width: 1200px) {
-    .accordion {
-        max-width: 800px;
-        margin-left: 280px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    .accordion {
-        max-width: 600px;
-        margin-left: 100px;
-    }
-}
-
-@media (max-width: 767px) {
-    .accordion {
-        max-width: 100%;
-        margin-left: 0;
-    }
-
-    .accordion .contentBx {
-        margin: 10px 0;
-    }
-}
-
+        /* FAQ PAGE */
+        .accordion{
+            max-width: 800px;
+            margin-left: 240px;
+        }
+        .accordion .contentBx{
+            position: relative;
+            margin: 10px 20px;
+        }
+        .accordion .contentBx .label{
+         position: relative;
+         padding: 10px;
+         background: #dfb6b0;
+         color: black;
+         cursor: pointer;
+         text-align: center;   
+        }
+        .accordion .contentBx .label::before{
+            content: "+";
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            font-size: 1.5rem;
+            transform: translateY(-50%);
+        }
+        .accordion .contentBx .label.active::before{
+            content: "-";
+        }
+        .accordion .contentBx .content{
+            position: relative;
+            text-align: center;
+            display: none;
+            transition: 0.6s;
+            
+        }
+        @media(min-width:1200px) {
+            .accordion{
+                max-width: 800px;
+                margin-left: 240px;
+            }
+        }
+        @media(min-width:768px)and(max-width:1199px){
+            .accordion{
+                  max-width: 600px;
+                margin-left: 80px;
+            }
+        }
+        @media(min-width:767px){
+            .accordion{
+                width: 100%;
+            }
+        }
+        .accordion .contentBx{
+            margin: 10px 0;
+        }
