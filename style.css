@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
             margin: 0;
             padding: 0;
@@ -5,7 +6,7 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
             line-height: 1.6;
             background-color: #FFE8CD !important;
     
@@ -131,14 +132,10 @@
             margin-top: 1rem;
             padding-top: 1rem;
             border-top: 1px solid #eee;
-            color: #7f8c8d;
+            color: #434a4b;
+             animation: fadeIn 0.3s ease;
         }
-
-        .solution.show {
-            display: block;
-            animation: fadeIn 0.3s ease;
-        }
-        .fa-exclamation-circle{
+     .fa-exclamation-circle{
             color: #de1c5d;
         }
 
@@ -260,3 +257,113 @@
         .accordion .contentBx{
             margin: 10px 0;
         }
+    /* PRODUCTS WEBPAGE */
+    
+    .product-card{
+       
+        text-align:  center;
+    }
+    .product-list{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    /* HOME WEBPAGE */
+
+    .home-banner{
+        background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("file:///C:/Users/Munawar%20Aly/Downloads/nail-hygiene-care-drying-polish.jpg");
+        height: 800px;
+        background-position: center;
+        background-size: cover;
+     }
+     .nav-item{
+        display: flex;
+        justify-content: end;
+     }
+     /* <!-- HOME SECTION CATEGORIES --> */
+     .wrapper{
+        perspective: 3000px;
+     }
+     .home-card{
+       height: 300px;
+       width: 100%;
+       transform-style:preserve-3d ;
+       transition:transform .8s ease-in-out;
+       cursor: pointer;
+       border: 1px #dfb6b0 solid;
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),-5px -5px 10px rgba(0, 0, 0, 0.05);
+       border-radius: 15px;
+       margin-top: 40px;
+       
+    }
+    .home-card:hover{
+        transform: rotateY(180deg);
+    }
+    .front-page,
+    .back-page{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 15px;
+    }
+    .front-page{
+        background-image: url("images/womens\ card.avif");
+        background-size: cover;
+    }
+    #front-page{
+        background-image: url("https://media.istockphoto.com/id/1296812135/fi/valokuva/tytt%C3%B6-jolla-on-pionit-kauniit-vaaleat-hiukset-ja-v%C3%A4rik%C3%A4s-lasten-manikyyri.jpg?s=612x612&w=0&k=20&c=7gu24OwpNOrVHDF0NknYWz1extADTJadH2bbg2PRLjY=");
+        background-size: cover;
+        
+    }
+    .home-card-info{
+        position: absolute;
+        bottom: 50px;
+        left: 45px;
+        color: #eee;
+        text-align: center;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    .home-card-title{
+        font-style: 2rem;
+        font-weight: bold;
+    }
+    .back-page{
+        background-color:#dfb6b0;
+        color: #de1c5d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateY(180deg);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) ;
+    }
+    .home-card-content{
+        text-align: center;
+        padding: 20px;
+        max-width: 100%;
+    }
+    .home-card-content h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    }
+    .home-card-description{
+        font-size: 1rem;
+        color: #de1c5d;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    .home-card-button{
+        background-color: #de1c5d;
+        color: #eee;
+        padding :12px 24px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .home-card-button:hover{
+        background-color: transparent;
+        color: #de1c5d;
+        border: 1px solid #de1c5d;
+    }
