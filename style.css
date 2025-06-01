@@ -1,369 +1,412 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        body {
-            font-family: "Poppins", sans-serif;
-            line-height: 1.6;
-            background-color: #FFE8CD !important;
-    
-        }
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    background-color: #FFE8CD !important;
 
-        /* Header Styles */
-        .text-center>h1{
-            color: black !important;
-        }
-        .fa-gem{
-            color: #de1c5d;
-        }
+}
 
-        /* Section Styles */
-        .section {
-            padding: 4rem 0;
-        }
+/* Header Styles */
+.text-center>h1 {
+    color: black !important;
+}
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
+.fa-gem {
+    color: #de1c5d;
+}
 
-        .section-title h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: black;
-            margin-bottom: 1rem;
-        }
+/* Section Styles */
+.section {
+    padding: 4rem 0;
+}
 
-        .section-title p {
-            font-size: 1.1rem;
-            color: #5f6d6e;
-        }
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
-        /* Card Styles */
-        .care-card {
-            background:#EECCC7;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            height: 100%;
-            border: none;
-        }
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 1rem;
+}
 
-        .care-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
+.section-title p {
+    font-size: 1.1rem;
+    color: #5f6d6e;
+}
 
-        .care-card .icon {
-            font-size: 3rem;
-            color: #de1c5d;
-            margin-bottom: 1rem;
-        }
+/* Card Styles */
+.care-card {
+    background: #EECCC7;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: none;
+}
 
-        .care-card h4 {
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #2c3e50;
-        }
+.care-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
 
-        /* Tips Section */
-        .tips-section {
-               background-color:#FFE8CD !important;
-        }
+.care-card .icon {
+    font-size: 3rem;
+    color: #de1c5d;
+    margin-bottom: 1rem;
+}
 
-        .tip-item {
-            background:#EECCC7;
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-            border-left: 4px solid #de1c5d;
-            transition: all 0.3s ease;
-        }
+.care-card h4 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
 
-        .tip-item:hover {
-            transform: translateX(10px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
+/* Tips Section */
+.tips-section {
+    background-color: #FFE8CD !important;
+}
 
-        .tip-item .tip-number {
-            background: #de1c5d;
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            margin-right: 1rem;
-            flex-shrink: 0;
-        }
+.tip-item {
+    background: #EECCC7;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #de1c5d;
+    transition: all 0.3s ease;
+}
 
-        /* Problems Section */
-        .problem-card {
-            background: #EECCC7;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+.tip-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
-        .problem-card:hover {
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-        }
+.tip-item .tip-number {
+    background: #de1c5d;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
 
-        .problem-title {
-            display: flex;
-            justify-content: between;
-            align-items: center;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 0.5rem;
-        }
+/* Problems Section */
+.problem-card {
+    background: #EECCC7;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
-        .solution {
-            display: none;
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #eee;
-            color: #434a4b;
-             animation: fadeIn 0.3s ease;
-        }
-     .fa-exclamation-circle{
-            color: #de1c5d;
-        }
+.problem-card:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.problem-title {
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.solution {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    color: #434a4b;
+    animation: fadeIn 0.3s ease;
+}
+
+.fa-exclamation-circle {
+    color: #de1c5d;
+}
 
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-            
-            .section-title h2 {
-                font-size: 2rem;
-            }
-            
-            .care-card {
-                margin-bottom: 2rem;
-            }
-        }
-
-        /* Scroll to top button */
-        .scroll-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #ff6b9d;
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-
-        .scroll-top:hover {
-            background: #de1c5d;
-            transform: translateY(-3px);
-        }
-
-        .scroll-top.show {
-            display: flex;
-        }
-        /* FAQ PAGE */
-        .accordion{
-            max-width: 800px;
-            margin-left: 240px;
-        }
-        .accordion .contentBx{
-            position: relative;
-            margin: 10px 20px;
-        }
-        .accordion .contentBx .label{
-         position: relative;
-         padding: 10px;
-         background: #dfb6b0;
-         color: black;
-         cursor: pointer;
-         text-align: center;   
-        }
-        .accordion .contentBx .label::before{
-            content: "+";
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            font-size: 1.5rem;
-            transform: translateY(-50%);
-        }
-        .accordion .contentBx .label.active::before{
-            content: "-";
-        }
-        .accordion .contentBx .content{
-            position: relative;
-            text-align: center;
-            display: none;
-            transition: 0.6s;
-            
-        }
-        @media(min-width:1200px) {
-            .accordion{
-                max-width: 800px;
-                margin-left: 240px;
-            }
-        }
-        @media(min-width:768px)and(max-width:1199px){
-            .accordion{
-                  max-width: 600px;
-                margin-left: 80px;
-            }
-        }
-        @media(min-width:767px){
-            .accordion{
-                width: 100%;
-            }
-        }
-        .accordion .contentBx{
-            margin: 10px 0;
-        }
-    /* PRODUCTS WEBPAGE */
-    
-    .product-card{
-       
-        text-align:  center;
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
-    .product-list{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    /* HOME WEBPAGE */
 
-    .home-banner{
-        background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("file:///C:/Users/Munawar%20Aly/Downloads/nail-hygiene-care-drying-polish.jpg");
-        height: 800px;
-        background-position: center;
-        background-size: cover;
-     }
-     .nav-item{
-        display: flex;
-        justify-content: end;
-     }
-     /* <!-- HOME SECTION CATEGORIES --> */
-     .wrapper{
-        perspective: 3000px;
-     }
-     .home-card{
-       height: 300px;
-       width: 100%;
-       transform-style:preserve-3d ;
-       transition:transform .8s ease-in-out;
-       cursor: pointer;
-       border: 1px #dfb6b0 solid;
-       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),-5px -5px 10px rgba(0, 0, 0, 0.05);
-       border-radius: 15px;
-       margin-top: 40px;
-       
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    .home-card:hover{
-        transform: rotateY(180deg);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-    .front-page,
-    .back-page{
-        position: absolute;
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .care-card {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Scroll to top button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff6b9d;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-top:hover {
+    background: #de1c5d;
+    transform: translateY(-3px);
+}
+
+.scroll-top.show {
+    display: flex;
+}
+
+/* FAQ PAGE */
+.accordion {
+    max-width: 800px;
+    margin-left: 240px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    background: #dfb6b0;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.accordion .contentBx .label::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+}
+
+.accordion .contentBx .label.active::before {
+    content: "-";
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    text-align: center;
+    display: none;
+    transition: 0.6s;
+
+}
+
+@media(min-width:1200px) {
+    .accordion {
+        max-width: 800px;
+        margin-left: 240px;
+    }
+}
+
+@media(min-width:768px)and(max-width:1199px) {
+    .accordion {
+        max-width: 600px;
+        margin-left: 80px;
+    }
+}
+
+@media(min-width:767px) {
+    .accordion {
         width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        border-radius: 15px;
     }
-    .front-page{
-        background-image: url("images/womens\ card.avif");
-        background-size: cover;
-    }
-    #front-page{
-        background-image: url("https://media.istockphoto.com/id/1296812135/fi/valokuva/tytt%C3%B6-jolla-on-pionit-kauniit-vaaleat-hiukset-ja-v%C3%A4rik%C3%A4s-lasten-manikyyri.jpg?s=612x612&w=0&k=20&c=7gu24OwpNOrVHDF0NknYWz1extADTJadH2bbg2PRLjY=");
-        background-size: cover;
-        
-    }
-    .home-card-info{
-        position: absolute;
-        bottom: 50px;
-        left: 45px;
-        color: #eee;
-        text-align: center;
-        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-    }
-    .home-card-title{
-        font-style: 2rem;
-        font-weight: bold;
-    }
-    .back-page{
-        background-color:#dfb6b0;
-        color: #de1c5d;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: rotateY(180deg);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) ;
-    }
-    .home-card-content{
-        text-align: center;
-        padding: 20px;
-        max-width: 100%;
-    }
-    .home-card-content h3{
+}
+
+.accordion .contentBx {
+    margin: 10px 0;
+}
+
+/* PRODUCTS WEBPAGE */
+
+.product-card {
+
+    text-align: center;
+}
+
+#product-list {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* HOME WEBPAGE */
+.home-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("file:///C:/Users/Munawar%20Aly/Downloads/nail-hygiene-care-drying-polish.jpg");
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: end;
+}
+
+/* <!-- HOME SECTION CATEGORIES --> */
+.wrapper {
+    perspective: 3000px;
+}
+
+.home-card {
+    height: 300px;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform .8s ease-in-out;
+    cursor: pointer;
+    border: 1px #dfb6b0 solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    margin-top: 40px;
+
+}
+
+.home-card:hover {
+    transform: rotateY(180deg);
+}
+
+.front-page,
+.back-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.front-page {
+    background-image: url("images/womens\ card.avif");
+    background-size: cover;
+}
+
+#front-page {
+    background-image: url("https://media.istockphoto.com/id/1296812135/fi/valokuva/tytt%C3%B6-jolla-on-pionit-kauniit-vaaleat-hiukset-ja-v%C3%A4rik%C3%A4s-lasten-manikyyri.jpg?s=612x612&w=0&k=20&c=7gu24OwpNOrVHDF0NknYWz1extADTJadH2bbg2PRLjY=");
+    background-size: cover;
+
+
+}
+
+#kids-heading {
+    margin-left: 320px;
+
+}
+
+.home-card-info {
+    position: absolute;
+    bottom: 50px;
+    left: 45px;
+    color: #7A1527;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.home-card-title {
+    font-style: 2rem;
+    font-weight: bold;
+}
+
+.back-page {
+    background-color: #dfb6b0;
+    color: #7A1527;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.home-card-content {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.home-card-content h3 {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 15px;
-    }
-    .home-card-description{
-        font-size: 1rem;
-        color: #de1c5d;
-        margin-bottom: 20px;
-        line-height: 1.6;
-    }
-    .home-card-button{
-        background-color: #de1c5d;
-        color: #eee;
-        padding :12px 24px;
-        font-size: 1rem;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    .home-card-button:hover{
-        background-color: transparent;
-        color: #de1c5d;
-        border: 1px solid #de1c5d;
-    }
+}
+
+.home-card-description {
+    font-size: 1rem;
+    color: #7A1527;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.home-card-button {
+    background-color: #7A1527;
+    color: #eee;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-card-button:hover {
+    background-color: transparent;
+    color: #7A1527;
+    border: 1px solid #7A1527;
+}
