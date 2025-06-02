@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Permanent+Marker&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .fa-gem {
-    color: #de1c5d;
+    color: #7A1527;
 }
 
 /* Section Styles */
@@ -63,7 +63,7 @@ body {
 
 .care-card .icon {
     font-size: 3rem;
-    color: #de1c5d;
+    color: #7A1527;
     margin-bottom: 1rem;
 }
 
@@ -83,7 +83,7 @@ body {
     padding: 1.5rem;
     border-radius: 10px;
     margin-bottom: 1rem;
-    border-left: 4px solid #de1c5d;
+    border-left: 4px solid #7A1527;
     transition: all 0.3s ease;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .tip-item .tip-number {
-    background: #de1c5d;
+    background: #7A1527;
     color: white;
     width: 30px;
     height: 30px;
@@ -140,7 +140,7 @@ body {
 }
 
 .fa-exclamation-circle {
-    color: #de1c5d;
+    color: #7A1527;
 }
 
 
@@ -205,7 +205,7 @@ body {
 }
 
 .scroll-top:hover {
-    background: #de1c5d;
+    background: #7A1527;
     transform: translateY(-3px);
 }
 
@@ -214,26 +214,28 @@ body {
 }
 
 /* FAQ PAGE */
-.accordion {
+.FAQ-main-section {
     max-width: 800px;
     margin-left: 240px;
 }
 
-.accordion .contentBx {
+.FAQ-main-section .contentBx {
     position: relative;
     margin: 10px 20px;
+    transform: translateY(30);
 }
 
-.accordion .contentBx .label {
+.FAQ-main-section .contentBx .label {
     position: relative;
     padding: 10px;
     background: #dfb6b0;
     color: black;
     cursor: pointer;
     text-align: center;
+    transition: all 3s ease-in-out;
 }
 
-.accordion .contentBx .label::before {
+.FAQ-main-section .contentBx .label::before {
     content: "+";
     position: absolute;
     top: 50%;
@@ -242,11 +244,11 @@ body {
     transform: translateY(-50%);
 }
 
-.accordion .contentBx .label.active::before {
+.FAQ-main-section .contentBx .label.active::before {
     content: "-";
 }
 
-.accordion .contentBx .content {
+.FAQ-main-section .contentBx .content {
     position: relative;
     text-align: center;
     display: none;
@@ -255,26 +257,26 @@ body {
 }
 
 @media(min-width:1200px) {
-    .accordion {
+    .FAQ-main-section {
         max-width: 800px;
         margin-left: 240px;
     }
 }
 
 @media(min-width:768px)and(max-width:1199px) {
-    .accordion {
+    .FAQ-main-section {
         max-width: 600px;
         margin-left: 80px;
     }
 }
 
 @media(min-width:767px) {
-    .accordion {
+    .FAQ-main-section {
         width: 100%;
     }
 }
 
-.accordion .contentBx {
+.FAQ-main-section .contentBx {
     margin: 10px 0;
 }
 
@@ -292,17 +294,86 @@ body {
 
 /* HOME WEBPAGE */
 .home-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("file:///C:/Users/Munawar%20Aly/Downloads/nail-hygiene-care-drying-polish.jpg");
-    height: 800px;
+    background: linear-gradient(rgba(0, 0, 0,0.2), rgba(0, 0, 0,0.2)), url("images/banner.jpg");
+    height: 570px;
     background-position: center;
     background-size: cover;
+    
 }
-
-.nav-item {
-    display: flex;
-    justify-content: end;
+#navbar{
+    position: sticky;
 }
+.navbar-nav .nav-item .nav-link{
+    margin-right: 20px;
+    font-weight: bold;
+    color: #eee;
 
+}
+.navbar-nav .nav-item .nav-link:hover{
+    background-color: #7A1527;
+    color: #eee;
+    border-radius: 17px;
+}
+.navbar-brand {
+  color:#eee !important;
+  font-size: 44px !important;
+font-family:"Playfair", serif !important;
+ font-weight: bold !important;
+ margin-left: 20px;
+
+}
+#banner-headng h1{
+    color: #7A1527;
+    font-size: 47px;
+    font-weight: bold;
+     font-family: "Ancizar Serif", serif;
+}
+#banner-headng {
+    margin-left: 30px;
+    width: 600px;
+    margin-top: 80px;
+
+}
+#banner-headng p{
+    font-size: 28px;
+    line-height: 1.8;
+    color: #eee;
+}
+#banner-btn{
+    background-color: #7A1527;
+    padding: 10px;
+    color: #eee;
+    border-radius: 17px;
+    font-weight: 100;
+    
+}
+#banner-btn:hover{
+    background-color: #eee;
+    color: #7A1527;
+}
+/* other services */
+.nailcare-card{
+    margin-top: 100px;
+     margin-bottom: 100px;
+     background-color: #EECCC7 !important;
+}
+.nailcare-card>img{
+    border-radius: 50%;
+}
+.nailcare-cardheading{
+    font-size: 22px;
+    color: #7A1527;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+}
+.nailcare-cardpara{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
 /* <!-- HOME SECTION CATEGORIES --> */
 .wrapper {
     perspective: 3000px;

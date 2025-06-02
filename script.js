@@ -162,7 +162,7 @@
   },
 ];
 
-// Add products using plain JavaScript
+// Product webpage//
 var container = document.getElementById('product-list');
 
 for (var i = 0; i < products.length; i++) {
@@ -194,3 +194,13 @@ $(document).on('mouseenter', '.product-image', function() {
 $(document).on('mouseleave', '.product-image', function() {
   $(this).attr('src', $(this).data('img1'));
 });
+// home page navbar background property//
+window.onscroll = function(){
+  var navbar = document.getElementById("navbar")
+  if(window.pageYOffset>0){
+    navbar.style.backgroundColor = "transparent"
+  }
+  else{
+    navbar.style.backgroundColor = "#dfb6b0"
+  }
+}
