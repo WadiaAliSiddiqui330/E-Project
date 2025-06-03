@@ -63,7 +63,7 @@
     image2: "https://cdn.shopify.com/s/files/1/0649/4879/7673/files/celebrate-that_isl159_long_lasting_nail_polish_99399000881_hand_and_bottle.jpg?v=1743453647&width=1080"
   },
    {
-    name: "Blush NUde",
+    name: "Blush Nude",
     price: "$30",
     desc: "Vibrant color, lasting shine.",
     image1: "https://cdn.shopify.com/s/files/1/0649/4879/7673/files/it_never_ends_ISL29_long_lasting_nail_polish_99399000371_2000x2477_9a002271-dc13-412b-bddb-aa0190d3dc3b.jpg?v=1706193436&width=1080",
@@ -77,21 +77,21 @@
     image2: "https://cdn.shopify.com/s/files/1/0649/4879/7673/files/steel_waters_run_deep_gif_2000x2477_366017cb-8c77-493a-bbdd-ee8cd8041ef8.gif?v=1706193996&width=1080"
   },
    {
-    name: "Product 3",
+    name: "Shiny Light Blue",
     price: "$30",
     desc: "Vibrant color, lasting shine.",
     image1: "https://cdn.shopify.com/s/files/1/0649/4879/7673/files/SP25_ecommerce_2025_JPG_living_the_fanta-sea_isl170_long_lasting_nail_polish_99399000892_2000x2477_8eb05802-2dc8-4e9e-af05-6ad7e9bf34de.jpg?v=1734424422&width=1080",
     image2: "https://cdn.shopify.com/s/files/1/0649/4879/7673/files/sp25_ecommerce_jpg_living_the_fanta-sea_isl170_long_lasting_nail_polish_99399000892_hand_and_bottle.jpg?v=1734472413&width=1080"
   },
    {
-    name: "Product 3",
+    name: "Lemon Shine",
     price: "$30",
     desc: "Vibrant color, lasting shine.",
     image1: "https://cdn.shopify.com/s/files/1/0649/4879/7673/files/SP25_ecommerce_2025_JPG_slay_hello_to_yellow_isl168_long_lasting_nail_polish_99399000890_2000x2477_6882f19f-2840-4bc3-96c0-8a2c6261f7c4.jpg?v=1734331544&width=1080",
     image2: "https://cdn.shopify.com/s/files/1/0649/4879/7673/files/sp25_ecommerce_jpg_slay_hello_to_yellow_isl168_long_lasting_nail_polish_99399000890_hand_and_bottle_57e8bce6-85b6-4996-bab8-713661c0a02a.jpg?v=1734472922&width=1080"
   },
    {
-    name: "Product 3",
+    name: "Petal Pink",
     price: "$30",
     desc: "Vibrant color, lasting shine.",
     image1: "https://cdn.shopify.com/s/files/1/0649/4879/7673/files/SP25_ecommerce_2025_JPG_suzis_pedicure_throne_isl163_long_lasting_nail_polish_99399000885_2000x2477_124f4f9c-4363-4573-96ae-2d06e739656f.jpg?v=1734457052&width=1080",
@@ -176,7 +176,7 @@ for (var i = 0; i < products.length; i++) {
              data-img2="${products[i].image2}" 
              alt="${products[i].name}">
         <div class="card-body">
-          <h6 class="card-title mt-2">${products[i].name}</h6>
+          <h5 class="card-title mt-3 fw-bold">${products[i].name}</h5>
           <p class="card-text mb-0">${products[i].desc}</p>
           <p class="card-text"><strong>${products[i].price}</strong></p>
         </div>
