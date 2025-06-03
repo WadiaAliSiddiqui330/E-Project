@@ -295,11 +295,12 @@ body {
 
 /* HOME WEBPAGE */
 .home-banner {
+    margin-top: -170px;
+    padding-top: 100px;
     background: linear-gradient(rgba(0, 0, 0,0.2), rgba(0, 0, 0,0.2)), url("images/banner.jpg");
     height: 570px;
     background-position: center;
     background-size: cover;
-    
 }
 #navbar{
     position:sticky;
@@ -359,7 +360,7 @@ font-family:"Playfair", serif !important;
 }
 /* other services */
 .nailcare-card{
-    margin-top: 100px;
+    margin-top: 30px;
      margin-bottom: 100px;
      background-color: #EECCC7 !important;
 }
@@ -424,7 +425,7 @@ font-family:"Playfair", serif !important;
 }
 
 #kids-heading {
-    margin-left: 320px;
+    margin-left: 430px;
 
 }
 
@@ -486,4 +487,11 @@ font-family:"Playfair", serif !important;
     background-color: transparent;
     color: #7A1527;
     border: 1px solid #7A1527;
+}
+/* kids webpage */
+.kids-banner{
+    background: linear-gradient(rgba(0, 0, 0,0.2), rgba(0, 0, 0,0.2)),url("https://img.freepik.com/premium-photo/children-is-multicolored-manicure-child-with-flowers_364573-1461.jpg?semt=ais_hybrid&w=740");
+    height: 570px;
+    background-position: center;
+    background-size: contain;
 }

@@ -17,40 +17,41 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+    <a class="navbar-brand" href="#">Nail Art</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nail Art Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Nail Care.html
+          ">Nail Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>  
   <div class="container-fluid home-banner">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-topz" id="navbar">
-      <a class="navbar-brand" href="#">Nail Art</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nail Art Info</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Categories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Nail Care.html
-            ">Nail Care</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+   
     <div id="banner-headng">
       <h1>WELCOME TO NAIL ART</h1>
       <p>From classic elegance to bold creativity, we bring you expert nail inspiration, tips, and trends that keep your
@@ -61,6 +62,7 @@
   <!-- HOME SECTION CATEGORIES -->
   <div class="container">
     <div class="row">
+      <h1></h1>
       <!-- womens card -->
       <div class="col women-card">
         <div class="wrapper">
@@ -81,17 +83,13 @@
           </div>
         </div>
       </div>
-      <div class="col"></div>
-    </div>
-    <!-- kids card -->
-    <div class="row">
-      <div class="col"></div>
+      <!-- kids card -->
       <div class="col">
         <div class="wrapper">
           <div class="home-card">
             <div class="front-page" id="front-page">
               <div class="home-card-info">
-                <h2 class="home-card-title" id="kids-heading">Kids/Teens</h2>
+                <h2 class="home-card-title" id="kids-heading">Kids</h2>
               </div>
             </div>
             <div class="back-page">
@@ -110,6 +108,7 @@
   <!--  other services cards starts from here -->
   <div class="container nailcare-cards">
     <div class="row">
+      <h1 class="text-center mt-5">OTHER SERVICES</h1>
       <div class="col">
         <!-- card # 1 -->
         <div class="card nailcare-card" style="width: 18rem;">
@@ -161,6 +160,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="script.js"></script>
 
+      <script>
+        window.onscroll = function(){
+  var navbar = document.getElementById("navbar")
+  if(window.pageYOffset==0){
+    navbar.style.backgroundColor = "transparent"
+    console.log(window.pageYOffset)
+  }
+  else{
+    navbar.style.backgroundColor = "#dfb6b0"
+    console.log(window.pageYOffset)
+  }
+}
+      </script>
 </body>
 
 </html>
