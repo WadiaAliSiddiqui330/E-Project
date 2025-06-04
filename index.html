@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <a class="navbar-brand" href="#">Nail Art</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,20 +51,23 @@
     </div>
   </nav>  
   <div class="container-fluid home-banner">
-   
-    <div id="banner-headng">
+   <row>
+    <div id="banner-headng" class="col .col-sm- .col-md- .col-lg-">
       <h1>WELCOME TO NAIL ART</h1>
       <p>From classic elegance to bold creativity, we bring you expert nail inspiration, tips, and trends that keep your
         hands looking fabulous every day.</p>
       <a href="product.html"><button id="banner-btn">VIEW PRODUCTS</button></a>
     </div>
   </div>
+  </row>
+  
+
   <!-- HOME SECTION CATEGORIES -->
   <div class="container">
     <div class="row">
       <h1></h1>
       <!-- womens card -->
-      <div class="col women-card">
+      <div class="col .col-sm- .col-md- .col-lg- women-card">
         <div class="wrapper">
           <div class="home-card">
             <div class="front-page">
@@ -77,14 +80,14 @@
                 <h3>Womens</h3>
                 <p class="home-card-description">Elevate your look with our beautiful nail art for women—featuring
                   elegant designs, bold colors, and trendy styles for every occasion. Perfect nails, always.</p>
-                <button class="home-card-button">Explore More</button>
+               <a href="womens.html"><button class="home-card-button">Explore More</button></a> 
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- kids card -->
-      <div class="col">
+      <div class=".col .col-sm- .col-md- .col-lg-">
         <div class="wrapper">
           <div class="home-card">
             <div class="front-page" id="front-page">
@@ -97,7 +100,7 @@
                 <h3>Kids/Teens</h3>
                 <p class="home-card-description">Elevate your look with our beautiful nail art for kids—featuring
                   elegant designs, bold colors, and trendy styles for every occasion. Perfect nails, always.</p>
-                <button class="home-card-button">Explore More</button>
+               <a href="kids.html"><button class="home-card-button">Explore More</button></a>
               </div>
             </div>
           </div>
@@ -109,7 +112,7 @@
   <div class="container nailcare-cards">
     <div class="row">
       <h1 class="text-center mt-5">OTHER SERVICES</h1>
-      <div class="col">
+      <div class="col .col-sm- .col-md- .col-lg-">
         <!-- card # 1 -->
         <div class="card nailcare-card" style="width: 18rem;">
           <img
@@ -123,7 +126,7 @@
         </div>
       </div>
       <!-- card # 2 -->
-      <div class="col">
+      <div class="col .col-sm- .col-md- .col-lg-">
         <div class="card nailcare-card" style="width: 18rem;">
           <img
             src="https://royalnailspaca.com/wp-content/uploads/elementor/thumbs/shutterstock_photo_1102835063-scaled-r5eh48ody2gok5on92h5tybq0o81so6pr1z3za758k.jpg"
@@ -137,7 +140,7 @@
       </div>
 
       <!-- card # 3 -->
-      <div class="col">
+      <div class="col .col-sm- .col-md- .col-lg-">
         <div class="card nailcare-card" style="width: 18rem;">
           <img
             src="https://royalnailspaca.com/wp-content/uploads/elementor/thumbs/freepik_standard_10854563-scaled-r5eh45uvdkctlbsqpj9a4h1c8ily5kviqo0njgbbr8.jpg"
@@ -160,19 +163,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="script.js"></script>
 
-      <script>
-        window.onscroll = function(){
-  var navbar = document.getElementById("navbar")
-  if(window.pageYOffset==0){
-    navbar.style.backgroundColor = "transparent"
-    console.log(window.pageYOffset)
-  }
-  else{
-    navbar.style.backgroundColor = "#dfb6b0"
-    console.log(window.pageYOffset)
-  }
-}
-      </script>
+
 </body>
 
 </html>

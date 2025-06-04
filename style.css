@@ -420,13 +420,10 @@ font-family:"Playfair", serif !important;
 #front-page {
     background-image: url("https://media.istockphoto.com/id/1296812135/fi/valokuva/tytt%C3%B6-jolla-on-pionit-kauniit-vaaleat-hiukset-ja-v%C3%A4rik%C3%A4s-lasten-manikyyri.jpg?s=612x612&w=0&k=20&c=7gu24OwpNOrVHDF0NknYWz1extADTJadH2bbg2PRLjY=");
     background-size: cover;
-
-
 }
 
 #kids-heading {
-    margin-left: 430px;
-
+    margin-left: 370px;
 }
 
 .home-card-info {
@@ -490,8 +487,25 @@ font-family:"Playfair", serif !important;
 }
 /* kids webpage */
 .kids-banner{
-    background: linear-gradient(rgba(0, 0, 0,0.2), rgba(0, 0, 0,0.2)),url("https://img.freepik.com/premium-photo/children-is-multicolored-manicure-child-with-flowers_364573-1461.jpg?semt=ais_hybrid&w=740");
-    height: 570px;
+    background: linear-gradient(rgba(0, 0, 0,0.2), rgba(0, 0, 0,0.2)),url("https://img.freepik.com/free-photo/smartphone-with-blank-paper-roses-cosmetics_23-2148055332.jpg?ga=GA1.1.1735019369.1748620982&w=740");
+    height: 500px;
     background-position: center;
     background-size: contain;
+}
+.kids-banner-heading{
+color: #eee;
+font-family: "Ancizar Serif", serif;
+padding-top: 140px;
+font-size: 55px;
+font-weight: bold;
+}
+.kids-subheading{
+    color: #eee;
+    text-align: center;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.history{
+    border: rde solid 3px
 }

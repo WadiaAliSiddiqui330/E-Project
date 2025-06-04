@@ -1,4 +1,15 @@
-
+// home page navbar background property//
+ window.onscroll = function(){
+  var navbar = document.getElementById("navbar")
+  if(window.pageYOffset==0){
+    navbar.style.backgroundColor = "transparent"
+    console.log(window.pageYOffset)
+  }
+  else{
+    navbar.style.backgroundColor = "#F49BAB"
+    console.log(window.pageYOffset)
+  }
+}
         //  NAILCARE webpage
          $(document).ready(function(){
             $(".problem-title").click(function(){
@@ -194,4 +205,3 @@ $(document).on('mouseenter', '.product-image', function() {
 $(document).on('mouseleave', '.product-image', function() {
   $(this).attr('src', $(this).data('img1'));
 });
-// home page navbar background property//
