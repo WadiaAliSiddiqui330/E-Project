@@ -6,7 +6,7 @@ window.onscroll = function(){
     console.log(window.pageYOffset)
   }
   else{
-    navbar.style.backgroundColor = "#F49BAB"
+    navbar.style.backgroundColor = "#56021F"
     console.log(window.pageYOffset)
   }
 } 
