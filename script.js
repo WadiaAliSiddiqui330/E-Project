@@ -6,7 +6,7 @@ window.onscroll = function(){
     console.log(window.pageYOffset)
   }
   else{
-    navbar.style.backgroundColor = "#F49BAB"
+    navbar.style.backgroundColor = "#7A1527"
     console.log(window.pageYOffset)
   }
 } 
@@ -14,7 +14,7 @@ window.onscroll = function(){
          $(document).ready(function(){
             $(".problem-title").click(function(){
                 $(this).next(".solution").toggle()
-            })
+            }) 
         })
         // FAQ WEBPAGE
         $(document).ready(function(){
