@@ -1001,7 +1001,7 @@ font-weight: bold;
 }
 #kids-heading{
     position: absolute;
-    left: 100px;
+    left: 100%;
     bottom: 20%;
 }
 .kids-subheading{
