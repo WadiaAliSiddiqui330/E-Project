@@ -1085,3 +1085,986 @@ font-weight: bold;
 }
 
 /* Footer section End */
+/* ---------------------------
+   NAVBAR
+----------------------------*/
+@media(max-width:576px){
+  #navbar img{
+    width: 110px;
+    height: auto;
+  }
+
+  .navbar-nav{
+    text-align: center;
+  }
+
+  .nav-link{
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
+
+/* ---------------------------
+   HOME BANNER
+----------------------------*/
+@media(max-width:576px){
+  .home-banner{
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  #banner-headng h1{
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 20px;
+  }
+
+  #banner-headng p{
+    font-size: 15px;
+    margin: 15px 5px;
+  }
+
+  #banner-btn{
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ---------------------------
+   HOME CATEGORY CARDS
+----------------------------*/
+@media(max-width:576px){
+  .home-section .col,
+  .nailcare-cards .col{
+    margin-bottom: 20px;
+  }
+
+  .home-card{
+    width: 100%;
+    height: auto;
+  }
+
+  .home-card-title{
+    font-size: 22px;
+  }
+
+  .home-card-description{
+    font-size: 14px;
+  }
+
+  .home-card-button{
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+/* ---------------------------
+   NAILCARE CARDS (MANI/PEDI/WAX)
+----------------------------*/
+@media(max-width:576px){
+  .nailcare-card{
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .nailcare-card img{
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .nailcare-cardheading{
+    font-size: 18px;
+  }
+}
+
+/* ---------------------------
+   FOOTER RESPONSIVE
+----------------------------*/
+@media(max-width:576px){
+  footer ul{
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  footer h5{
+    font-size: 18px;
+  }
+
+  footer li{
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .socialicon i{
+    font-size: 20px;
+    margin: 0 8px;
+  }
+
+  footer .row hr{
+    margin: 15px 0;
+  }
+
+  footer h6{
+    font-size: 14px;
+  }
+}
+
+/* ---------------------------
+   PRODUCTS PAGE RESPONSIVE
+----------------------------*/
+
+/* Product heading alignment */
+@media (max-width: 576px) {
+  .contactheading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .line {
+    width: 60%;
+    margin: 0 auto 20px;
+  }
+}
+
+
+/* Product list grid */
+@media (max-width: 768px) {
+  #product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  #product-list {
+    grid-template-columns: 1fr;
+  }
+}
+/* -----------------------------------
+   HEADING + TOP PARAGRAPH
+------------------------------------*/
+@media (max-width: 576px) {
+  .contactheading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .line {
+    width: 60%;
+    margin: 0 auto 20px;
+  }
+
+  .about-us-section p {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+
+/* -----------------------------------
+   ABOUT US — 2 COLUMN SECTIONS
+------------------------------------*/
+@media (max-width: 768px) {
+  .about-us-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about-us-heading {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us-section span {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    display: block;
+  }
+
+  .about-us-section li {
+    text-align: center;
+  }
+
+  .about-us-section .row {
+    text-align: center;
+  }
+}
+
+
+/* -----------------------------------
+   TEAM CARDS
+------------------------------------*/
+@media (max-width: 768px) {
+  .aboutus-card {
+    margin: 0 auto 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutus-card {
+    width: 100% !important;
+  }
+
+  .aboutus-card img {
+    height: auto !important;
+  }
+
+  .card-text {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+/* -----------------------------------
+   PAGE HEADING
+------------------------------------*/
+@media (max-width: 576px) {
+  .categorie-webheading {
+    font-size: 26px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .categorie-webheading .line {
+    width: 60%;
+    margin: 10px auto;
+  }
+}
+
+
+/* -----------------------------------
+   CATEGORY TEXT + IMAGE SECTIONS
+------------------------------------*/
+
+/* Tablet: Adjust image size + spacing */
+@media (max-width: 768px) {
+
+  .categorie-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .categorie-heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .categorie-section span {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    display: block;
+  }
+
+  .categorie-section .row {
+    text-align: center;
+  }
+}
+
+/* Mobile: Stack columns & reduce text */
+@media (max-width: 576px) {
+
+  .categorie-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .space {
+    margin-top: 10px !important;
+  }
+
+  .categorie-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .categorie-section {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+/* -----------------------------------
+   PAGE HEADING (CATEGORIE'S)
+------------------------------------*/
+@media (max-width: 576px) {
+  .contactheading {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .line {
+    width: 60%;
+    margin: 10px auto 20px;
+  }
+}
+
+
+/* -----------------------------------
+   CATEGORY GRID (CARDS AREA)
+------------------------------------*/
+
+/* Tablet view (2 cards per row if needed) */
+@media (max-width: 992px) {
+  .categorie-box-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .categorie-box {
+    width: 45%;
+  }
+}
+
+/* Mobile view (1 card per row) */
+@media (max-width: 576px) {
+  .categorie-box-area {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .categorie-box {
+    width: 100%;
+  }
+
+  .categorie-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .overlay span {
+    text-align: center;
+    font-size: 15px;
+    display: block;
+  }
+
+  .Categorie-btn {
+    display: block;
+    margin: 10px auto 0;
+    text-align: center;
+  }
+}
+/* Contact Us Page Responsive CSS */
+@media (max-width: 992px) {
+    /* Main heading and line */
+    .contactheading {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .line {
+        width: 60px;
+        margin: 10px auto 30px auto;
+    }
+
+    /* Contact text */
+    .contact .content span {
+        font-size: 0.95rem;
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    /* Contact card layout */
+    .contact-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Contact info and form full width */
+    .contactinfo, .contactform {
+        width: 100%;
+    }
+
+    /* Individual contact boxes */
+    .contact-box {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .contact-box .icon {
+        font-size: 1.5rem;
+        margin-right: 15px;
+    }
+
+    .contact-box .text h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-box .text span {
+        font-size: 0.9rem;
+    }
+
+    /* Form input fields */
+    .contactform h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .contactform .inputbox input,
+    .contactform .inputbox textarea {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contactform .inputbox span {
+        font-size: 0.85rem;
+    }
+
+    .contactform .inputbox input[type="submit"] {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Smaller devices adjustments */
+    .contactheading {
+        font-size: 1.7rem;
+    }
+
+    .contact .content span {
+        font-size: 0.85rem;
+    }
+
+    .contact-box .icon {
+        font-size: 1.3rem;
+        margin-right: 10px;
+    }
+
+    .contactform h2 {
+        font-size: 1.3rem;
+    }
+
+    .contactform .inputbox input,
+    .contactform .inputbox textarea {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .contactform .inputbox input[type="submit"] {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* Reduce spacing */
+    .contact-card {
+        gap: 15px;
+    }
+}
+
+/* Map iframe responsiveness */
+.mcont iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+}
+
+@media (max-width: 768px) {
+    .mcont iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mcont iframe {
+        height: 250px;
+    }
+}
+/* Face Nail Page Responsive CSS */
+@media (max-width: 992px) {
+    /* Heading adjustments */
+    .categorie-webheading {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .line {
+        width: 60px;
+        margin: 10px auto 30px auto;
+    }
+
+    /* Section text and images */
+    .categorie-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .categorie-section .categorie-heading {
+        font-size: 1.4rem;
+    }
+
+    .categorie-section span {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .categorie-section1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .categorie-webheading {
+        font-size: 1.7rem;
+    }
+
+    .categorie-section .categorie-heading {
+        font-size: 1.2rem;
+    }
+
+    .categorie-section span {
+        font-size: 0.9rem;
+    }
+
+    .categorie-section {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .categorie-webheading {
+        font-size: 1.5rem;
+    }
+
+    .categorie-section .categorie-heading {
+        font-size: 1.1rem;
+    }
+
+    .categorie-section span {
+        font-size: 0.85rem;
+    }
+
+    .categorie-section {
+        gap: 15px;
+    }
+
+    .categorie-section1 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Fade-in animations adjustment for smaller screens */
+.fade-in-up,
+.fade-in-up.delay {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease-in-out;
+}
+/* FAQ Page Responsiveness */
+@media (max-width: 992px) {
+    .contactheading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .line {
+        width: 60px;
+        margin: 10px auto 30px auto;
+    }
+
+    .FAQ-main-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contentBx {
+        margin-bottom: 20px;
+    }
+
+    .contentBx .label {
+        font-size: 1.2rem;
+        padding: 12px 15px;
+    }
+
+    .contentBx .content p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactheading {
+        font-size: 1.8rem;
+    }
+
+    .contentBx .label {
+        font-size: 1.1rem;
+        padding: 10px 12px;
+    }
+
+    .contentBx .content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contactheading {
+        font-size: 1.5rem;
+    }
+
+    .contentBx .label {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+
+    .contentBx .content p {
+        font-size: 0.85rem;
+    }
+
+    .FAQ-main-section {
+        width: 95%;
+    }
+}
+
+/* FAQ toggle effect (optional) */
+.contentBx .content {
+    display: none;
+    padding: 10px 15px;
+    border-left: 3px solid #ff69b4;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.contentBx.active .content {
+    display: block;
+}
+/* Kids Page Responsiveness */
+.kids-banner {
+    background: url('images/kids-banner.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.kids-banner-heading {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.kids-subheading {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.kids-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.headings {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.kids-sub-haeding {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .kids-banner-heading {
+        font-size: 2.5rem;
+    }
+    .paragraph {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .kids-banner-heading {
+        font-size: 2rem;
+    }
+    .kids-subheading {
+        font-size: 1rem;
+    }
+    .headings {
+        font-size: 1.6rem;
+    }
+    .paragraph {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .kids-banner {
+        padding: 60px 15px;
+    }
+    .kids-banner-heading {
+        font-size: 1.8rem;
+    }
+    .kids-subheading {
+        font-size: 0.9rem;
+    }
+    .headings {
+        font-size: 1.4rem;
+    }
+    .paragraph {
+        font-size: 0.85rem;
+    }
+}
+/* Headings */
+.headings {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+.paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Sub-headings in list */
+.kids-sub-haeding {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Images */
+.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Footer links */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.socialicon a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.socialicon a:hover {
+    color: #ff4081;
+}
+/* General responsive adjustments */
+@media (max-width: 1200px) {
+    .care-card, .tip-item, .problem-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .care-card {
+        padding: 15px;
+    }
+    .tip-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tip-number {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Nail care cards stack vertically */
+    .care-card {
+        margin: 0 auto 20px auto;
+    }
+
+    /* Tips stack vertically */
+    .tip-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tip-number {
+        margin: 0 auto 10px auto;
+    }
+
+    /* Problem cards full width */
+    .problem-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Footer sections stack */
+    .footer .row > div {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* Small devices (phones, <576px) */
+@media (max-width: 575px) {
+    h1.display-4 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p.lead {
+        font-size: 0.9rem;
+    }
+    .care-card .icon {
+        font-size: 30px;
+    }
+    .tip-number {
+        font-size: 20px;
+    }
+    .socialicon a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+}
+/* General container padding for smaller screens */
+@media (max-width: 1200px) {
+    .privacypolicy-content {
+        padding: 0 20px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+    .contactheading {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .privacypolicy-content h3 {
+        font-size: 1.5rem;
+    }
+    .privacypolicy-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+    .contactheading {
+        font-size: 1.7rem;
+    }
+    .privacypolicy-content h3 {
+        font-size: 1.3rem;
+    }
+    .privacypolicy-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+/* Extra small devices (very small phones) */
+@media (max-width: 575px) {
+    .contactheading {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .privacypolicy-content h3 {
+        font-size: 1.2rem;
+    }
+    .privacypolicy-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+    .footer .row > div {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .socialicon a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+}
+/* General container padding for smaller screens */
+@media (max-width: 1200px) {
+    .kids-container {
+        padding: 0 20px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+    .contactheading {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .headings {
+        font-size: 1.5rem;
+    }
+    .paragraph {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .kids-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+    .contactheading {
+        font-size: 1.7rem;
+    }
+    .headings {
+        font-size: 1.3rem;
+    }
+    .paragraph {
+        font-size: 0.95rem;
+    }
+    .kids-container .row {
+        flex-direction: column !important;
+    }
+    .kids-container .row .col {
+        margin-bottom: 20px;
+    }
+}
+
+/* Extra small devices (very small phones) */
+@media (max-width: 575px) {
+    .contactheading {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .headings {
+        font-size: 1.1rem;
+    }
+    .paragraph {
+        font-size: 0.9rem;
+    }
+}
