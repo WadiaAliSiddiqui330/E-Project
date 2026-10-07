@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Permanent+Marker&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -12,9 +15,532 @@ body {
     line-height: 1.6;
     background-color: #FFE8CD !important;
 
+
 }
 
-/* Header Styles */
+/* Categorie webpage */
+
+
+/* Web page top heading */
+
+.categorie-webheading {
+    height: 70px;
+    /* width: 100%; */
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    font-size: 40px;
+    font-family: initial;
+
+}
+
+.line {
+    border-top: 3px solid #7A1527;
+    margin-top: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+/* Main Categorie Webpage Start*/
+#wrapper {
+    padding: 10px 10%;
+}
+
+.categorie-box-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.categorie-box {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.categorie-box img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    height: 500px;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #7A1527 48%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    transition: height 0.5s;
+}
+
+.overlay h3 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.categorie-box:hover img {
+    transform: scale(1.2);
+}
+
+.categorie-box:hover .overlay {
+    height: 100%;
+}
+
+.Categorie-btn {
+    background-color: #db8f9d;
+}
+
+@media (max-width: 1024px) {
+    #wrapper {
+        padding: 10px 5%;
+    }
+
+    .categorie-box img {
+        height: 400px;
+    }
+
+    .overlay h3 {
+        font-size: 24px;
+        margin-top: 70%;
+    }
+}
+
+/* 
+ Small Screens (Mobile phones) */
+@media (max-width: 768px) {
+    #wrapper {
+        padding: 10px 3%;
+    }
+
+    .categorie-box-area {
+        grid-gap: 25px;
+    }
+
+    .categorie-box img {
+        height: 280px;
+    }
+
+    .overlay h3 {
+        font-size: 20px;
+        margin-top: 60%;
+    }
+}
+
+/* Extra Small Screens (Very small mobiles) */
+@media (max-width: 480px) {
+    .categorie-box img {
+        height: 220px;
+    }
+
+    .overlay {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    .overlay h3 {
+        font-size: 16px;
+        margin-top: 50%;
+    }
+}
+
+/* LED or Ultra-Wide Screens */
+@media (min-width: 1440px) {
+    #wrapper {
+        padding: 20px 15%;
+    }
+
+    .categorie-box img {
+        height: 550px;
+    }
+
+    .overlay h3 {
+        font-size: 34px;
+        margin-top: 85%;
+    }
+}
+
+/* Main Categorie Webpage End*/
+/* Categorie 6 section's*/
+.categorie-section {
+    background-color: #e0b0a8;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.8;
+}
+
+.space {
+    padding-top: 75px;
+}
+
+.categorie-heading {
+    font-family: initial;
+}
+
+.categorie-section1 img {
+    border-radius: 15px;
+}
+
+/* Common animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Base animation class */
+.fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Optional delay for staggering animation */
+.delay {
+    animation-delay: 0.5s;
+}
+
+
+/* Categorie section end */
+
+/* Contact Us*/
+.contactheading {
+    text-align: center;
+    font-size: 70px;
+    color: #7A1527;
+    font-weight: 600;
+    margin: 15px 15px 0 10px;
+    font-family: initial;
+}
+
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+    margin-top: -120px;
+
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: black;
+}
+
+.contact-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.mcont {
+    margin-top: -30px;
+}
+
+.contact-card .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-card .contactinfo .contact-box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contact-card .contactinfo .contact-box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contact-card .contactinfo .contact-box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contact-card .contactinfo .contact-box .text h3 {
+    font-weight: 500;
+    color: #7A1527;
+}
+
+.contactform {
+    width: 40%;
+    padding: 40px;
+    background: white;
+}
+
+.contactform h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputbox input:focus~span,
+.contactform .inputbox input:valid~span .contactform .inputbox textarea:focus~span,
+.contactform .inputbox textarea:valid~span {
+    color: #244855;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"] {
+    width: 100px;
+    background: #7A1527;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Medium Screens (Tablets & Small Laptops) */
+@media (max-width: 1024px) {
+    .contact {
+        padding: 40px 40px;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card .contactinfo,
+    .contactform {
+        width: 100%;
+    }
+
+    .contactform {
+        margin-top: 30px;
+    }
+
+    .contactform h2 {
+        font-size: 26px;
+    }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+    .contactheading {
+        font-size: 30px;
+    }
+
+    .contact .content {
+        margin-top: -60px;
+        padding: 0 10px;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+
+    .contactform {
+        padding: 20px;
+    }
+
+    .contactform h2 {
+        font-size: 22px;
+    }
+
+    .contactform .inputbox input[type="submit"] {
+        width: 100%;
+    }
+
+    .contact-card {
+        gap: 10px;
+    }
+
+    .contact-card .contactinfo .contact-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-card .contactinfo .contact-box .text {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Large Screens (LEDs) */
+@media (min-width: 1440px) {
+    .contact {
+        padding: 80px 200px;
+    }
+
+    .contactheading {
+        font-size: 50px;
+    }
+
+    .contactform {
+        padding: 60px;
+    }
+
+    .contactform h2 {
+        font-size: 36px;
+    }
+}
+
+/* Contact us end*/
+/* Gallery start*/
+.gallery-image {
+    margin-top: 20px;
+}
+
+.gallery-image img {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    height: 480px;
+    width: 100%;
+}
+
+.gallery-image img:hover {
+    transform: scale(1.05);
+}
+
+/*Gallery end*/
+/* About Us start*/
+.about-us-section {
+    
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.8;
+
+}
+
+.nail-info-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px !important;
+}
+
+.about-us-heading {
+    font-family: initial;
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+.aboutus-card {
+    border-radius: 25px;
+}
+
+.card {
+    box-shadow: 30px 30px 20px rgba(13, 19, 13, 0.1);
+    background-color: #e9bcc4;
+}
+
+.aboutus-card h3 {
+    font-family: initial;
+    font-size: 35px;
+    color: black;
+}
+
+.aboutus-card h5 {
+    font-family: initial;
+    font-size: 20px;
+    color: #691222;
+}
+
+.aboutus-card p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8;
+    align-items: center;
+}
+
+/* Privacy Policy start*/
+.privacypolicy-content {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 25px;
+}
+
+.privacypolicy-content h3 {
+    font-family: initial;
+    ;
+    font-weight: 800px;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Privacy Policy end*/
 .text-center>h1 {
     color: black !important;
 }
@@ -45,7 +571,7 @@ body {
     color: #5f6d6e;
 }
 
-/* Card Styles */
+ /* /* Card Style  */
 .care-card {
     background: #EECCC7;
     border-radius: 15px;
@@ -72,8 +598,6 @@ body {
     margin-bottom: 1rem;
     color: #2c3e50;
 }
-
-/* Tips Section */
 .tips-section {
     background-color: #FFE8CD !important;
 }
@@ -105,8 +629,6 @@ body {
     margin-right: 1rem;
     flex-shrink: 0;
 }
-
-/* Problems Section */
 .problem-card {
     background: #EECCC7;
     border-radius: 10px;
@@ -142,9 +664,6 @@ body {
 .fa-exclamation-circle {
     color: #7A1527;
 }
-
-
-/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -184,33 +703,6 @@ body {
     .care-card {
         margin-bottom: 2rem;
     }
-}
-
-/* Scroll to top button */
-.scroll-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #ff6b9d;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.scroll-top:hover {
-    background: #7A1527;
-    transform: translateY(-3px);
-}
-
-.scroll-top.show {
-    display: flex;
 }
 
 /* FAQ PAGE */
@@ -293,7 +785,10 @@ body {
     margin-right: 40px;
 }
 
-/* HOME WEBPAGE */
+
+/* ------------------------------------
+   HOME WEBPAGE
+------------------------------------ */
 .home-banner {
     margin-top: -170px;
     padding-top: 100px;
@@ -301,73 +796,102 @@ body {
     height: 570px;
     background-position: center;
     background-size: cover;
+    width: 100%;
+    text-align: left;
 }
-#navbar{
-    position:sticky;
-    z-index: 1000;
+
+.navbar {
+    background-color: rgb(212, 141, 154);
+    height: 76px;
+}
+
+#navbar {
+    position: sticky;
     top: 0;
-    
+    z-index: 1000;
 }
-.navbar-nav .nav-item .nav-link{
+
+.navbar-nav .nav-item .nav-link {
     margin-right: 20px;
     font-weight: bold;
     color: #eee;
-     border-radius: 17px;
-
+    border-radius: 17px;
 }
-.navbar-nav .nav-item .nav-link:hover{
+
+.navbar-nav .nav-item .nav-link:hover {
     background-color: #7A1527;
     color: #eee;
     border-radius: 17px;
 }
-.navbar-brand {
-  color:#eee !important;
-  font-size: 44px !important;
-font-family:"Playfair", serif !important;
- font-weight: bold !important;
- margin-left: 20px;
 
+.navbar-brand {
+    color: #eee !important;
+    font-size: 44px !important;
+    font-family: "Playfair", serif !important;
+    font-weight: bold !important;
+    margin-left: 20px;
 }
-#banner-headng h1{
+
+#banner-headng h1 {
     color: #7A1527;
     font-size: 49px;
     font-weight: bold;
- font-family: "Ancizar Serif", serif;
- 
+    font-family: "Ancizar Serif", serif;
 }
+
 #banner-headng {
     margin-left: 30px;
     width: 600px;
     margin-top: 80px;
-
 }
-#banner-headng p{
+
+#banner-headng p {
     font-size: 28px;
     line-height: 1.8;
     color: #eee;
 }
-#banner-btn{
+
+#banner-btn {
     background-color: #7A1527;
-    padding: 10px;
+    padding: 15px;
     color: #eee;
     border-radius: 17px;
-    font-weight: 100;
-    
+    letter-spacing: 0.5px;
 }
-#banner-btn:hover{
+
+#banner-btn:hover {
     background-color: #eee;
     color: #7A1527;
 }
-/* other services */
-.nailcare-card{
-    margin-top: 30px;
-     margin-bottom: 100px;
-     background-color: #EECCC7 !important;
+
+.home-haedings {
+    font-size: 50px;
+    text-align: center;
+    color: #7A1527;
+    margin-bottom: 40px;
+    font-weight: 500;
 }
-.nailcare-card>img{
+
+.home-section {
+    height: auto;
+}
+
+/* ------------------------------------
+   OTHER SERVICES
+------------------------------------ */
+.nailcare-card {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: rgb(244, 155, 171) !important;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.nailcare-card>img {
     border-radius: 50%;
 }
-.nailcare-cardheading{
+
+.nailcare-cardheading {
     font-size: 22px;
     color: #7A1527;
     text-align: center;
@@ -375,13 +899,17 @@ font-family:"Playfair", serif !important;
     margin-bottom: 20px;
     letter-spacing: 8px;
 }
-.nailcare-cardpara{
+
+.nailcare-cardpara {
     font-size: 18px;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
 }
-/* <!-- HOME SECTION CATEGORIES --> */
+
+/* ------------------------------------
+   CATEGORY CARDS
+------------------------------------ */
 .wrapper {
     perspective: 3000px;
 }
@@ -393,18 +921,16 @@ font-family:"Playfair", serif !important;
     transition: transform .8s ease-in-out;
     cursor: pointer;
     border: 1px #dfb6b0 solid;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2), -5px -5px 10px rgba(0,0,0,0.05);
     border-radius: 15px;
     margin-top: 40px;
-
 }
 
 .home-card:hover {
     transform: rotateY(180deg);
 }
 
-.front-page,
-.back-page {
+.front-page, .back-page {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -413,17 +939,13 @@ font-family:"Playfair", serif !important;
 }
 
 .front-page {
-    background-image: url("images/womens\ card.avif");
+    background-image: url("images/womens card.avif");
     background-size: cover;
 }
 
 #front-page {
-    background-image: url("https://media.istockphoto.com/id/1296812135/fi/valokuva/tytt%C3%B6-jolla-on-pionit-kauniit-vaaleat-hiukset-ja-v%C3%A4rik%C3%A4s-lasten-manikyyri.jpg?s=612x612&w=0&k=20&c=7gu24OwpNOrVHDF0NknYWz1extADTJadH2bbg2PRLjY=");
+    background-image: url("https://media.istockphoto.com/id/1296812135/fi/valokuva/tyttö-jolla-on-pionit-kauniit-vaaleat-hiukset-ja-värikäs-lasten-manikyyri.jpg?s=612x612&w=0&k=20&c=7gu24OwpNOrVHDF0NknYWz1extADTJadH2bbg2PRLjY=");
     background-size: cover;
-}
-
-#kids-heading {
-    margin-left: 370px;
 }
 
 .home-card-info {
@@ -432,11 +954,11 @@ font-family:"Playfair", serif !important;
     left: 45px;
     color: #7A1527;
     text-align: center;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
 .home-card-title {
-    font-style: 2rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -447,7 +969,7 @@ font-family:"Playfair", serif !important;
     justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
 .home-card-content {
@@ -485,27 +1007,1270 @@ font-family:"Playfair", serif !important;
     color: #7A1527;
     border: 1px solid #7A1527;
 }
-/* kids webpage */
-.kids-banner{
-    background: linear-gradient(rgba(0, 0, 0,0.2), rgba(0, 0, 0,0.2)),url("https://img.freepik.com/free-photo/smartphone-with-blank-paper-roses-cosmetics_23-2148055332.jpg?ga=GA1.1.1735019369.1748620982&w=740");
+
+/* ------------------------------------
+   KIDS PAGE
+------------------------------------ */
+.kids-banner {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://img.freepik.com/free-photo/smartphone-with-blank-paper-roses-cosmetics_23-2148055332.jpg?ga=GA1.1.1735019369.1748620982&w=740");
     height: 500px;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    text-align: center;
 }
-.kids-banner-heading{
-color: #eee;
-font-family: "Ancizar Serif", serif;
-padding-top: 140px;
-font-size: 55px;
-font-weight: bold;
+
+.kids-banner-heading {
+    color: #eee;
+    font-family: "Ancizar Serif", serif;
+    padding-top: 140px;
+    font-size: 55px;
+    font-weight: bold;
 }
-.kids-subheading{
+
+.kids-subheading {
     color: #eee;
     text-align: center;
     font-size: 30px;
-    font-family:Arial, Helvetica, sans-serif;
-    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headings {
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #7A1527;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.paragraph {
+    color: black;
+    font-size: 19px;
+    line-height: 1.8;
+    word-spacing: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ------------------------------------
+   FOOTER
+------------------------------------ */
+.footer {
+    background-color: #7A1527;
+    color: #fff;
+    padding: 50px 15px 20px 15px;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footer-heading {
+    font-family: cursive;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #dfb6b0;
+}
+
+.footer span {
+    color: #eee;
+    font-size: 15px;
+}
+
+.feature-icon {
+    margin-right: 10px;
+    color: #eee;
+}
+
+/* Social Icons */
+.socialicon {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    margin: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.socialicon a:hover {
+    background-color: #eee;
+    color: #7A1527;
+}
+
+/* Copyright */
+.footer hr {
+    border-top: 1px solid rgba(255,255,255,0.3);
+    margin: 20px 0;
+}
+
+.footer h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* ------------------------------------
+   RESPONSIVE
+------------------------------------ */
+@media(max-width: 992px) {
+    #banner-headng {
+        margin-left: 15px;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .home-card-info {
+        bottom: 40px;
+        left: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .home-banner {
+        text-align: center;
+        padding: 60px 15px;
+    }
+
+    #banner-headng h1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    #banner-headng p {
+        font-size: 16px;
+        margin: 10px 10px;
+    }
+
+    #banner-btn {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+    .home-section .col {
+        margin-bottom: 25px;
+    }
+
+    .home-card-title {
+        font-size: 24px;
+    }
+
+    .home-card-description {
+        font-size: 15px;
+    }
+
+    .nailcare-card {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 576px) {
+    #banner-headng h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    #banner-headng p {
+        font-size: 14px;
+    }
+
+    #banner-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .home-card-title {
+        font-size: 20px;
+    }
+
+    .home-card-description {
+        font-size: 14px;
+    }
+
+    .home-card-button {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .nailcare-card img {
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .nailcare-cardheading {
+        font-size: 18px;
+    }
+
+    .footer ul li {
+        text-align: center;
+    }
+
+    .socialicon {
+        flex-wrap: wrap;
+    }
+}
 
 
+/* ---------------------------
+   PRODUCTS PAGE RESPONSIVE
+----------------------------*/
 
+/* Product heading alignment */
+@media (max-width: 576px) {
+  .contactheading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .line {
+    width: 60%;
+    margin: 0 auto 20px;
+  }
+}
+
+
+/* Product list grid */
+@media (max-width: 768px) {
+  #product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  #product-list {
+    grid-template-columns: 1fr;
+  }
+}
+/* -----------------------------------
+   HEADING + TOP PARAGRAPH
+------------------------------------*/
+@media (max-width: 576px) {
+  .contactheading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .line {
+    width: 60%;
+    margin: 0 auto 20px;
+  }
+
+  .about-us-section p {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+
+/* -----------------------------------
+   ABOUT US — 2 COLUMN SECTIONS
+------------------------------------*/
+@media (max-width: 768px) {
+  .about-us-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about-us-heading {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us-section span {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    display: block;
+  }
+
+  .about-us-section li {
+    text-align: center;
+  }
+
+  .about-us-section .row {
+    text-align: center;
+  }
+}
+
+
+/* -----------------------------------
+   TEAM CARDS
+------------------------------------*/
+@media (max-width: 768px) {
+  .aboutus-card {
+    margin: 0 auto 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutus-card {
+    width: 100% !important;
+  }
+
+  .aboutus-card img {
+    height: auto !important;
+  }
+
+  .card-text {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+/* -----------------------------------
+   PAGE HEADING
+------------------------------------*/
+@media (max-width: 576px) {
+  .categorie-webheading {
+    font-size: 26px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .categorie-webheading .line {
+    width: 60%;
+    margin: 10px auto;
+  }
+}
+
+
+/* -----------------------------------
+   CATEGORY TEXT + IMAGE SECTIONS
+------------------------------------*/
+
+/* Tablet: Adjust image size + spacing */
+@media (max-width: 768px) {
+
+  .categorie-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .categorie-heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .categorie-section span {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    display: block;
+  }
+
+  .categorie-section .row {
+    text-align: center;
+  }
+}
+
+/* Mobile: Stack columns & reduce text */
+@media (max-width: 576px) {
+
+  .categorie-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .space {
+    margin-top: 10px !important;
+  }
+
+  .categorie-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .categorie-section {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+/* -----------------------------------
+   PAGE HEADING (CATEGORIE'S)
+------------------------------------*/
+@media (max-width: 576px) {
+  .contactheading {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .line {
+    width: 60%;
+    margin: 10px auto 20px;
+  }
+}
+
+
+/* -----------------------------------
+   CATEGORY GRID (CARDS AREA)
+------------------------------------*/
+
+/* Tablet view (2 cards per row if needed) */
+@media (max-width: 992px) {
+  .categorie-box-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .categorie-box {
+    width: 45%;
+  }
+}
+
+/* Mobile view (1 card per row) */
+@media (max-width: 576px) {
+  .categorie-box-area {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .categorie-box {
+    width: 100%;
+  }
+
+  .categorie-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .overlay span {
+    text-align: center;
+    font-size: 15px;
+    display: block;
+  }
+
+  .Categorie-btn {
+    display: block;
+    margin: 10px auto 0;
+    text-align: center;
+  }
+}
+/* Contact Us Page Responsive CSS */
+@media (max-width: 992px) {
+    /* Main heading and line */
+    .contactheading {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .line {
+        width: 60px;
+        margin: 10px auto 30px auto;
+    }
+
+    /* Contact text */
+    .contact .content span {
+        font-size: 0.95rem;
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    /* Contact card layout */
+    .contact-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Contact info and form full width */
+    .contactinfo, .contactform {
+        width: 100%;
+    }
+
+    /* Individual contact boxes */
+    .contact-box {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .contact-box .icon {
+        font-size: 1.5rem;
+        margin-right: 15px;
+    }
+
+    .contact-box .text h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-box .text span {
+        font-size: 0.9rem;
+    }
+
+    /* Form input fields */
+    .contactform h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .contactform .inputbox input,
+    .contactform .inputbox textarea {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contactform .inputbox span {
+        font-size: 0.85rem;
+    }
+
+    .contactform .inputbox input[type="submit"] {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Smaller devices adjustments */
+    .contactheading {
+        font-size: 1.7rem;
+    }
+
+    .contact .content span {
+        font-size: 0.85rem;
+    }
+
+    .contact-box .icon {
+        font-size: 1.3rem;
+        margin-right: 10px;
+    }
+
+    .contactform h2 {
+        font-size: 1.3rem;
+    }
+
+    .contactform .inputbox input,
+    .contactform .inputbox textarea {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .contactform .inputbox input[type="submit"] {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* Reduce spacing */
+    .contact-card {
+        gap: 15px;
+    }
+}
+
+/* Map iframe responsiveness */
+.mcont iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+}
+
+@media (max-width: 768px) {
+    .mcont iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mcont iframe {
+        height: 250px;
+    }
+}
+/* Face Nail Page Responsive CSS */
+@media (max-width: 992px) {
+    /* Heading adjustments */
+    .categorie-webheading {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .line {
+        width: 60px;
+        margin: 10px auto 30px auto;
+    }
+
+    /* Section text and images */
+    .categorie-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .categorie-section .categorie-heading {
+        font-size: 1.4rem;
+    }
+
+    .categorie-section span {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .categorie-section1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .categorie-webheading {
+        font-size: 1.7rem;
+    }
+
+    .categorie-section .categorie-heading {
+        font-size: 1.2rem;
+    }
+
+    .categorie-section span {
+        font-size: 0.9rem;
+    }
+
+    .categorie-section {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .categorie-webheading {
+        font-size: 1.5rem;
+    }
+
+    .categorie-section .categorie-heading {
+        font-size: 1.1rem;
+    }
+
+    .categorie-section span {
+        font-size: 0.85rem;
+    }
+
+    .categorie-section {
+        gap: 15px;
+    }
+
+    .categorie-section1 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Fade-in animations adjustment for smaller screens */
+.fade-in-up,
+.fade-in-up.delay {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease-in-out;
+}
+/* FAQ Page Responsiveness */
+@media (max-width: 992px) {
+    .contactheading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .line {
+        width: 60px;
+        margin: 10px auto 30px auto;
+    }
+
+    .FAQ-main-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contentBx {
+        margin-bottom: 20px;
+    }
+
+    .contentBx .label {
+        font-size: 1.2rem;
+        padding: 12px 15px;
+    }
+
+    .contentBx .content p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactheading {
+        font-size: 1.8rem;
+    }
+
+    .contentBx .label {
+        font-size: 1.1rem;
+        padding: 10px 12px;
+    }
+
+    .contentBx .content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contactheading {
+        font-size: 1.5rem;
+    }
+
+    .contentBx .label {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+
+    .contentBx .content p {
+        font-size: 0.85rem;
+    }
+
+    .FAQ-main-section {
+        width: 95%;
+    }
+}
+
+/* FAQ toggle effect (optional) */
+.contentBx .content {
+    display: none;
+    padding: 10px 15px;
+    border-left: 3px solid #ff69b4;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.contentBx.active .content {
+    display: block;
+}
+/* Kids Page Responsiveness */
+.kids-banner {
+    background: url('images/kids-banner.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.kids-banner-heading {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.kids-subheading {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.kids-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.headings {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.kids-sub-haeding {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .kids-banner-heading {
+        font-size: 2.5rem;
+    }
+    .paragraph {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .kids-banner-heading {
+        font-size: 2rem;
+    }
+    .kids-subheading {
+        font-size: 1rem;
+    }
+    .headings {
+        font-size: 1.6rem;
+    }
+    .paragraph {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .kids-banner {
+        padding: 60px 15px;
+    }
+    .kids-banner-heading {
+        font-size: 1.8rem;
+    }
+    .kids-subheading {
+        font-size: 0.9rem;
+    }
+    .headings {
+        font-size: 1.4rem;
+    }
+    .paragraph {
+        font-size: 0.85rem;
+    }
+}
+/* Headings */
+.headings {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+.paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Sub-headings in list */
+.kids-sub-haeding {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Images */
+.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Footer links */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.socialicon a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.socialicon a:hover {
+    color: #ff4081;
+}
+/* General responsive adjustments */
+@media (max-width: 1200px) {
+    .care-card, .tip-item, .problem-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .care-card {
+        padding: 15px;
+    }
+    .tip-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tip-number {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Nail care cards stack vertically */
+    .care-card {
+        margin: 0 auto 20px auto;
+    }
+
+    /* Tips stack vertically */
+    .tip-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tip-number {
+        margin: 0 auto 10px auto;
+    }
+
+    /* Problem cards full width */
+    .problem-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Footer sections stack */
+    .footer .row > div {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* Small devices (phones, <576px) */
+@media (max-width: 575px) {
+    h1.display-4 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p.lead {
+        font-size: 0.9rem;
+    }
+    .care-card .icon {
+        font-size: 30px;
+    }
+    .tip-number {
+        font-size: 20px;
+    }
+    .socialicon a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+}
+/* General container padding for smaller screens */
+@media (max-width: 1200px) {
+    .privacypolicy-content {
+        padding: 0 20px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+    .contactheading {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .privacypolicy-content h3 {
+        font-size: 1.5rem;
+    }
+    .privacypolicy-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+    .contactheading {
+        font-size: 1.7rem;
+    }
+    .privacypolicy-content h3 {
+        font-size: 1.3rem;
+    }
+    .privacypolicy-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+/* Extra small devices (very small phones) */
+@media (max-width: 575px) {
+    .contactheading {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .privacypolicy-content h3 {
+        font-size: 1.2rem;
+    }
+    .privacypolicy-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Shared layout and accessibility refinements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+.line {
+    width: min(100% - 2rem, 18rem);
+    margin: 0.75rem auto 2rem;
+}
+
+.contactheading {
+    margin: 1.5rem 0 0;
+    padding-inline: 1rem;
+    font-size: clamp(1.75rem, 5vw, 3.5rem);
+}
+
+.navbar {
+    min-height: 76px;
+    height: auto;
+    padding: 0.25rem clamp(0.75rem, 3vw, 2.5rem);
+}
+
+.navbar > img,
+.navbar-brand img {
+    width: 140px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-inline: 0.15rem;
+    padding-inline: 0.75rem;
+    transition: color 180ms ease, background-color 180ms ease;
+}
+
+.navbar-toggler:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible {
+    outline: 3px solid #7a1527;
+    outline-offset: 3px;
+}
+
+.footer {
+    padding-inline: clamp(1rem, 4vw, 3.5rem);
+}
+
+.footer > .row:first-child {
+    row-gap: 1.5rem;
+}
+
+.footer a,
+.socialicon a {
+    transition: color 180ms ease, background-color 180ms ease;
+}
+
+.FAQ-main-section {
+    width: min(100% - 2rem, 50rem);
+    margin: 0 auto;
+}
+
+.FAQ-main-section .contentBx .label,
+.problem-title {
+    cursor: pointer;
+}
+
+.problem-title[role="button"]:focus-visible,
+.FAQ-main-section .label:focus-visible {
+    outline-color: #7a1527;
+}
+
+#product-list {
+    margin-inline: 0;
+}
+
+.product-card {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background: #fffaf5;
+    box-shadow: 0 0.35rem 1.25rem rgba(63, 24, 30, 0.1);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.65rem 1.5rem rgba(63, 24, 30, 0.16);
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.categorie-box img {
+    object-fit: cover;
+}
+
+.contact .content {
+    margin-top: 0;
+}
+
+.contact {
+    min-height: auto;
+    padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1rem, 5vw, 4rem);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        z-index: 1001;
+        padding: 0.5rem 1rem 1rem;
+        background-color: rgb(212, 141, 154);
+    }
+
+    .footer .row > div {
+        min-width: 0;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar > img,
+    .navbar-brand img {
+        width: 112px;
+        height: 72px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer ul {
+        margin-bottom: 1.25rem;
+    }
+
+    .home-banner {
+        margin-top: -1px;
+        min-height: 27rem;
+        height: auto;
+    }
+
+    .contact-card .contactinfo .contact-box {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+    .footer .row > div {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .socialicon a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+}
+/* General container padding for smaller screens */
+@media (max-width: 1200px) {
+    .kids-container {
+        padding: 0 20px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+    .contactheading {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .headings {
+        font-size: 1.5rem;
+    }
+    .paragraph {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .kids-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+    .contactheading {
+        font-size: 1.7rem;
+    }
+    .headings {
+        font-size: 1.3rem;
+    }
+    .paragraph {
+        font-size: 0.95rem;
+    }
+    .kids-container .row {
+        flex-direction: column !important;
+    }
+    .kids-container .row .col {
+        margin-bottom: 20px;
+    }
+}
+
+/* Extra small devices (very small phones) */
+@media (max-width: 575px) {
+    .contactheading {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .headings {
+        font-size: 1.1rem;
+    }
+    .paragraph {
+        font-size: 0.9rem;
+    }
 }

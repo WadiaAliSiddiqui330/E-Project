@@ -1,28 +1,14 @@
-// home page navbar background property//
-window.onscroll = function(){
-  var navbar = document.getElementById("navbar")
-  if(window.pageYOffset==0){
-    navbar.style.backgroundColor = "transparent"
-    console.log(window.pageYOffset)
-  }
-  else{
-    navbar.style.backgroundColor = "#7A1527"
-    console.log(window.pageYOffset)
-  }
-} 
-        //  NAILCARE webpage
-         $(document).ready(function(){
-            $(".problem-title").click(function(){
-                $(this).next(".solution").toggle()
-            }) 
-        })
-        // FAQ WEBPAGE
-        $(document).ready(function(){
-            $(".label").click(function(){
-                $(this).next(".content").toggle()
-            })
-        })
-        // Products webpage//
+// Home page navbar background.
+window.addEventListener("scroll", function () {
+  var navbar = document.getElementById("navbar");
+  if (!navbar) return;
+
+  navbar.style.backgroundColor = window.scrollY === 0
+    ? "transparent"
+    : "rgb(212, 141, 154)";
+}, { passive: true });
+
+// Product catalog data.
         var products = [
   {
     name: "Pearly Nude",
@@ -173,35 +159,93 @@ window.onscroll = function(){
   },
 ];
 
-// Product webpage//
-var container = document.getElementById('product-list');
+// Render the catalog only on the products page.
+var productList = document.getElementById("product-list");
+if (productList) {
+  var productCards = document.createDocumentFragment();
 
-for (var i = 0; i < products.length; i++) {
+  products.forEach(function (product) {
+    var column = document.createElement("div");
+    column.className = "col-12 col-sm-6 col-lg-4 mb-4";
 
-  var card = `
-    <div class="col-md-4 mb-4">
-      <div class="product-card">
-        <img src="${ products[i].image1}" 
-             class="card-img-top product-image" 
-             data-img1="${products[i].image1}" 
-             data-img2="${products[i].image2}" 
-             alt="${products[i].name}">
-        <div class="card-body">
-          <h5 class="card-title mt-3 fw-bold">${products[i].name}</h5>
-          <p class="card-text mb-0">${products[i].desc}</p>
-          <p class="card-text"><strong>${products[i].price}</strong></p>
-        </div>
-      </div>
-    </div>
-  `;
+    var card = document.createElement("article");
+    card.className = "product-card";
 
-  container.innerHTML += card;
+    var image = document.createElement("img");
+    image.src = product.image1;
+    image.dataset.image1 = product.image1;
+    image.dataset.image2 = product.image2;
+    image.className = "card-img-top product-image";
+    image.alt = product.name;
+    image.loading = "lazy";
+
+    var body = document.createElement("div");
+    body.className = "card-body";
+
+    var title = document.createElement("h2");
+    title.className = "card-title mt-3 fw-bold";
+    title.textContent = product.name;
+
+    var description = document.createElement("p");
+    description.className = "card-text mb-0";
+    description.textContent = product.desc;
+
+    var price = document.createElement("p");
+    price.className = "card-text";
+    price.textContent = product.price;
+
+    body.append(title, description, price);
+    card.append(image, body);
+    column.append(card);
+    productCards.append(column);
+  });
+
+  productList.append(productCards);
 }
 
-$(document).on('mouseenter', '.product-image', function() {
-  $(this).attr('src', $(this).data('img2'));
+// Preserve the image swap on pointer devices; the first image remains on touch devices.
+document.addEventListener("pointerover", function (event) {
+  var image = event.target.closest(".product-image");
+  if (image && event.pointerType === "mouse") image.src = image.dataset.image2;
 });
 
-$(document).on('mouseleave', '.product-image', function() {
-  $(this).attr('src', $(this).data('img1'));
+document.addEventListener("pointerout", function (event) {
+  var image = event.target.closest(".product-image");
+  if (image && event.pointerType === "mouse" && !image.contains(event.relatedTarget)) {
+    image.src = image.dataset.image1;
+  }
+});
+
+// Make the existing FAQ and nail-care labels keyboard-operable toggles.
+var answerToggles = document.querySelectorAll(".problem-title, .label");
+answerToggles.forEach(function (toggle) {
+  var answer = toggle.nextElementSibling;
+  if (!answer || !answer.matches(".solution, .content")) return;
+
+  toggle.setAttribute("role", "button");
+  toggle.setAttribute("tabindex", "0");
+  toggle.setAttribute("aria-expanded", "false");
+  answer.hidden = true;
+});
+
+// Toggle FAQ answers and nail-care solutions without requiring jQuery.
+document.addEventListener("click", function (event) {
+  var toggle = event.target.closest(".problem-title, .label");
+  if (!toggle) return;
+
+  var answer = toggle.nextElementSibling;
+  if (!answer || !answer.matches(".solution, .content")) return;
+
+  var isOpen = toggle.getAttribute("aria-expanded") === "true";
+  toggle.setAttribute("aria-expanded", String(!isOpen));
+  answer.hidden = isOpen;
+  answer.style.display = isOpen ? "none" : "block";
+});
+
+document.addEventListener("keydown", function (event) {
+  if ((event.key !== "Enter" && event.key !== " ") ||
+      !event.target.matches(".problem-title, .label")) return;
+
+  event.preventDefault();
+  event.target.click();
 });
